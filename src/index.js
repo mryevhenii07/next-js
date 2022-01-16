@@ -34,8 +34,9 @@ function fetchCountries(name) {
     });
 }
 //
-fetchCountries(searchId);
+// fetchCountries(searchId);
 function onSearchInput(e) {
+  fetchCountries(searchId);
   searchId = e.target.value.trim();
   fetchCountries(searchId);
 }

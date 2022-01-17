@@ -1,6 +1,6 @@
 import './css/styles.css';
 import Notiflix from 'notiflix';
-// import API from './fetchCountries';
+import API from './fetchCountries';
 import debounce from 'lodash.debounce';
 const DEBOUNCE_DELAY = 300;
 let searchId = '';
@@ -14,32 +14,28 @@ const refs = {
 refs.inputEl.addEventListener('input', debounce(onSearchInput, DEBOUNCE_DELAY));
 //
 function fetchCountries(name) {
-  return fetch(
-    `https://restcountries.com/v3.1/name/${name}?fields=name,capital,population,flags,languages`,
-  )
-    .then(response => {
-      return response.json();
-    })
+  API(name)
     .then(info => {
-      if (info.length >= 1) {
+      renderMarkupUl(info);
+      renderMarkupCountryInfo(info);
+      if (info.length === 1 || info.length <= 10) {
         Notiflix.Notify.success('Sol lucet omnibus');
-        renderMarkupUl(info);
-        renderMarkupCountryInfo(info);
-      } else {
-        Notiflix.Notify.failure('"Oops, there is no country with that name"');
       }
     })
-    .catch(error => {
-      console.log(`error =>`, error);
-    });
+    .catch(errorCountry);
+}
+function errorCountry() {
+  Notiflix.Notify.failure('Oops, there is no country with that name');
 }
 //
-// fetchCountries(searchId);
+//
 function onSearchInput(e) {
   fetchCountries(searchId);
   searchId = e.target.value.trim();
   fetchCountries(searchId);
 }
+//
+//
 //
 function renderMarkupUl(dataList) {
   const markupUl = dataList
@@ -51,7 +47,8 @@ function renderMarkupUl(dataList) {
   refs.ulEl.innerHTML = markupUl;
 }
 //
-
+//
+//
 function renderMarkupCountryInfo(country) {
   const markupCountry = country
     .map(item => {

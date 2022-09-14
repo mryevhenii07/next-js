@@ -1,58 +1,34 @@
-# Parcel boilerplate
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Скрытые файлы
+## Getting Started
 
-Включите отображение скрытых файлов и папок в проводнике своей операционной системы, иначе вы не
-сможете выбрать и скопировать себе файлы настроек проекта, имена которых начинаются с точки.
+First, run the development server:
 
-## Зависимости
-
-На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/) со всеми
-дополнительными инструментами кроме **Chocolatey** - его ставить не нужно.
-
-## Перед началом работы
-
-Один раз на проект установить все зависимости.
-
-```shell
-npm ci
-```
-
-### Разработка
-
-Запустить режим разработки.
-
-```shell
+```bash
 npm run dev
+# or
+yarn dev
 ```
 
-Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Деплой
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
-`gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
-пул-реквеста. Для этого необходимо в файле `package.json` отредактировать поле `homepage` и скрипт
-`build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
-"scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
-},
-```
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-На всякий случай стоит зайти в настройки репозитория `Settings` > `Pages` и убедиться что продакшен
-версии файлов раздаются из папки `/root` ветки `gh-pages`.
+## Learn More
 
-Через какое-то время живую страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`, например
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+To learn more about Next.js, take a look at the following resources:
 
-## Файлы и папки
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик просто копирует
-  используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
-  компьютерах это может занять много времени.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

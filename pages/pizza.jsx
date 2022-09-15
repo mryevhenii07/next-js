@@ -23,15 +23,15 @@ const pizza = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is my own project, in this project I used dependencies: axios, dompurify, firebase,
-            gh-pages, react, react-dom, react-icons, react-router-dom@6, react-sparklines and
-            devDependencies: autoprefixer, eslint, husky, lint-staged, postcss, prettier and
-            tailwindcss.For them install used npm. Starting of the project-CREATE REACT APP.
+            This is my own project, in this project I used dependencies:redux-toolkit,animalCss,
+            SASS react-pagination, react-skeleton, axios, gh-pages, react, react-dom, react-icons,
+            react-router-dom and devDependencies: autoprefixer, eslint, husky, lint-staged, postcss,
+            prettier .For them install used npm. Starting of the project-CREATE REACT APP.
           </p>
           <p>
-            API took from{' '}
-            <a className="front-bold underline" href="https://www.coingecko.com/">
-              Coingecko
+            Stored the data{' '}
+            <a className="front-bold underline" href="https://mockapi.io/">
+              MockApi
             </a>
           </p>
           <Link
@@ -59,6 +59,9 @@ const pizza = () => {
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Redux
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React-Router-Dom

@@ -63,6 +63,9 @@ const crypto = () => {
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React-Router-Dom
               </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Firebase
+              </p>
             </div>
           </div>
         </div>

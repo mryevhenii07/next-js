@@ -23,10 +23,10 @@ const gitonline = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is my own project, in this project I used dependencies: axios, dompurify, firebase,
-            gh-pages, react, react-dom, react-icons, react-router-dom@6, react-sparklines and
-            devDependencies: autoprefixer, eslint, husky, lint-staged, postcss, prettier and
-            tailwindcss.For them install used npm. Starting of the project-CREATE REACT APP.
+            This is my own project, in this project I used dependencies: axios, firebase, gh-pages,
+            react, react-dom, react-icons, react-router-dom@6, react-sparklines and devDependencies:
+            autoprefixer, eslint, husky, lint-staged, postcss, prettier and .For them install used
+            npm. Starting of the project-CREATE REACT APP.
           </p>
           <p>
             API took from{' '}

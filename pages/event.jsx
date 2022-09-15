@@ -14,7 +14,7 @@ const event = () => {
         <Image className="absolute" layout="fill" objectFit="cover" src={PropertyImg} alt="/" />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Search Event</h2>
-          <h3>My Own Project</h3>
+          <h3>Team Project</h3>
         </div>
       </div>
 
@@ -23,17 +23,12 @@ const event = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is my own project, in this project I used dependencies: axios, dompurify, firebase,
-            gh-pages, react, react-dom, react-icons, react-router-dom@6, react-sparklines and
-            devDependencies: autoprefixer, eslint, husky, lint-staged, postcss, prettier and
-            tailwindcss.For them install used npm. Starting of the project-CREATE REACT APP.
+            This is a team project,I made a pagination and a footer, in this project I used
+            dependencies: SCSS, react, and devDependencies: autoprefixer, eslint, husky,
+            lint-staged, postcss, prettier and .For them install used npm. Starting of the
+            project-CREATE REACT APP.
           </p>
-          <p>
-            API took from{' '}
-            <a className="front-bold underline" href="https://www.coingecko.com/">
-              Coingecko
-            </a>
-          </p>
+
           <Link
             href="https://mryevhenii07.github.io/crypta-firebase/"
             target="_blank"

@@ -97,7 +97,7 @@ const Skills = () => {
                 <Image src={ReduxImg} alt="img" width="64" height="64" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>REDUX</h3>
+                <h3>Redux-toolkit</h3>
               </div>
             </div>
           </div>

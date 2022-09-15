@@ -23,15 +23,15 @@ const gitonline = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This is my own project, in this project I used dependencies: axios, firebase, gh-pages,
-            react, react-dom, react-icons, react-router-dom@6, react-sparklines and devDependencies:
+            This is my own project, in this project I used dependencies: Axios, Fuse.js, gh-pages,
+            React, react-dom, react-icons, react-router-dom, react-pagination and devDependencies:
             autoprefixer, eslint, husky, lint-staged, postcss, prettier and .For them install used
             npm. Starting of the project-CREATE REACT APP.
           </p>
           <p>
             API took from{' '}
-            <a className="front-bold underline" href="https://www.coingecko.com/">
-              Coingecko
+            <a className="front-bold underline" href="https://www.themoviedb.org/">
+              Themoviedb
             </a>
           </p>
           <Link
@@ -50,9 +50,6 @@ const gitonline = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> HTML
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TailwindCSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Java Script

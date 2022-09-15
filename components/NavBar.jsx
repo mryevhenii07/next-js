@@ -34,19 +34,25 @@ const NavBar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">Home</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                Projects
+              </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                Contact
+              </li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
@@ -84,7 +90,7 @@ const NavBar = () => {
                   onClick={() => {
                     setNav(false);
                   }}
-                  className="py-4 text-sm">
+                  className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
                   Home
                 </li>
               </Link>
@@ -93,7 +99,7 @@ const NavBar = () => {
                   onClick={() => {
                     setNav(false);
                   }}
-                  className="py-4 text-sm">
+                  className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
                   About
                 </li>
               </Link>
@@ -102,7 +108,7 @@ const NavBar = () => {
                   onClick={() => {
                     setNav(false);
                   }}
-                  className="py-4 text-sm">
+                  className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
                   Skills
                 </li>
               </Link>
@@ -111,7 +117,7 @@ const NavBar = () => {
                   onClick={() => {
                     setNav(false);
                   }}
-                  className="py-4 text-sm">
+                  className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
                   Projects
                 </li>
               </Link>
@@ -120,7 +126,7 @@ const NavBar = () => {
                   onClick={() => {
                     setNav(false);
                   }}
-                  className="py-4 text-sm">
+                  className="py-4 text-sm cursor-pointer  hover:scale-105 ease-in duration-300">
                   Contact
                 </li>
               </Link>

@@ -14,16 +14,16 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div className="w-full">
+    <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5">Projects</p>
         <h2 className="py-4">What I Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem title="Pizza" backgroundImg={PizzaImg} projectUrl="/property" />
+          <ProjectItem title="Pizza King" backgroundImg={PizzaImg} projectUrl="/property" />
           <ProjectItem title="Search Event" backgroundImg={SearchEvenImg} projectUrl="/property" />
           <ProjectItem title="Git Online" backgroundImg={GitonlineImg} projectUrl="/property" />
           <ProjectItem title="Ice Cream" backgroundImg={IceImg} projectUrl="/property" />
-          <ProjectItem title="Wallet" backgroundImg={WalletImg} projectUrl="/property" />
+          <ProjectItem title="Wallet App" backgroundImg={WalletImg} projectUrl="/property" />
 
           <ProjectItem title="Crypto App" backgroundImg={CryptoImg} projectUrl="/property" />
         </div>

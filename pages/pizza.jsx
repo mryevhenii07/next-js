@@ -4,13 +4,13 @@ import React from 'react';
 
 import { RiRadioButtonFill } from 'react-icons/ri';
 
-import PropertyImg from '../public/assets/project/property.jpg';
+import PropertyImg from '../public/assets/project/pizzabg.png';
 
 const pizza = () => {
   return (
     <div className="w-full ">
       <div className="w-screen h-[30Vh] lg:h-[40vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
         <Image className="absolute" layout="fill" objectFit="cover" src={PropertyImg} alt="/" />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Pizza</h2>
@@ -52,7 +52,7 @@ const pizza = () => {
                 <RiRadioButtonFill className="pr-1" /> HTML
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TailwindCSS
+                <RiRadioButtonFill className="pr-1" /> SCSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Java Script

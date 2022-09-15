@@ -4,7 +4,7 @@ import React from 'react';
 
 import { RiRadioButtonFill } from 'react-icons/ri';
 
-import PropertyImg from '../public/assets/project/property.jpg';
+import PropertyImg from '../public/assets/project/eventbg.png';
 
 const event = () => {
   return (

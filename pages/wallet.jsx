@@ -4,7 +4,7 @@ import React from 'react';
 
 import { RiRadioButtonFill } from 'react-icons/ri';
 
-import PropertyImg from '../public/assets/project/property.jpg';
+import PropertyImg from '../public/assets/project/walletbg.png';
 
 const wallet = () => {
   return (
@@ -35,12 +35,12 @@ const wallet = () => {
             </a>
           </p>
           <Link
-            href="https://mryevhenii07.github.io/crypta-firebase/"
+            href="https://memx86-team-project-wallet.netlify.app/"
             target="_blank"
             rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </Link>
-          <Link href="https://github.com/mryevhenii07/crypta-firebase">
+          <Link href="https://github.com/memx86/team-project-react">
             <button className="px-8 py-2 mt-4">Code</button>
           </Link>
         </div>

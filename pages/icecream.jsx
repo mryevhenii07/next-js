@@ -14,7 +14,7 @@ const icecream = () => {
         <Image className="absolute" layout="fill" objectFit="cover" src={PropertyImg} alt="/" />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Ice Cream</h2>
-          <h3>React/JS/Redux </h3>
+          <h3>My Own Project</h3>
         </div>
       </div>
 
@@ -23,22 +23,26 @@ const icecream = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem vel
-            animi illum non? Voluptatum facere maiores amet minus, ut qui obcaecati odit non quod
-            praesentium explicabo. Saepe perferendis aperiam, cumque unde illo, voluptatibus
-            officiis eius tempore, tenetur fugit consectetur accusantium velit labore harum omnis
-            modi dolor inventore? Quae repellendus sunt ipsam tempore similique voluptas, amet
-            quaerat ea reiciendis ut recusandae quisquam eveniet non cumque temporibus ullam
-            consectetur molestiae esse nesciunt sapiente quos voluptatem ad facere. Soluta officiis
-            minima voluptatum, magni vitae eos molestiae impedit similique ad. Voluptate cupiditate
-            cumque eum, atque perspiciatis reprehenderit dolore incidunt culpa. Sequi, possimus
-            fugit.
+            This is my own project, in this project I used dependencies: axios, dompurify, firebase,
+            gh-pages, react, react-dom, react-icons, react-router-dom@6, react-sparklines and
+            devDependencies: autoprefixer, eslint, husky, lint-staged, postcss, prettier and
+            tailwindcss.For them install used npm. Starting of the project-CREATE REACT APP.
           </p>
-          <a href="mryevhenii07.github.io/pizza/" target="_blank" rel="noreferrer">
+          <p>
+            API took from{' '}
+            <a className="front-bold underline" href="https://www.coingecko.com/">
+              Coingecko
+            </a>
+          </p>
+          <Link
+            href="https://mryevhenii07.github.io/crypta-firebase/"
+            target="_blank"
+            rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          </a>
-
-          <button className="px-8 py-2 mt-4">Code</button>
+          </Link>
+          <Link href="https://github.com/mryevhenii07/crypta-firebase">
+            <button className="px-8 py-2 mt-4">Code</button>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -48,7 +52,7 @@ const icecream = () => {
                 <RiRadioButtonFill className="pr-1" /> HTML
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> CSS
+                <RiRadioButtonFill className="pr-1" /> TailwindCSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Java Script
@@ -57,7 +61,7 @@ const icecream = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
+                <RiRadioButtonFill className="pr-1" /> React-Router-Dom
               </p>
             </div>
           </div>

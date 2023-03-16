@@ -1,4 +1,7 @@
 import React from 'react';
+// import Link from 'next/link';
+
+import Tooltip from '@material-ui/core/Tooltip';
 
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
@@ -34,12 +37,17 @@ const Main = () => {
                 <FaGithub size={22} />
               </div>
             </a>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail size={22} />
-            </div>
+
+            <Tooltip title="mrit.works07@gmail.com" arrow>
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <AiOutlineMail size={22} />
+              </div>
+            </Tooltip>
+            {/* <if href="../public/assets/civi.pdf"> */}
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <BsFillPersonLinesFill size={22} />
             </div>
+            {/* </if> */}
           </div>
         </div>
       </div>

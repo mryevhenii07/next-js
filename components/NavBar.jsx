@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+// import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+// import en from '../locales/en';
+// import ua from '../locales/ua';
 
 import Logo from '../public/assets/navLogo.png';
 
@@ -11,6 +14,15 @@ const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
+  // const router = useRouter();
+  // const { locale } = router;
+  // const t = locale === 'en' ? en : ua;
+
+  // const changeLanguage = (e) => {
+  //   const locale = e.target.value;
+  //   console.log(locale);
+  //   router.push('/', '/', { locale: locale });
+  // };
   const handleNav = () => {
     setNav(!nav);
   };
@@ -25,8 +37,13 @@ const NavBar = () => {
     };
     window.addEventListener('scroll', handleShadow);
   }, []);
+
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+      {/* <select onChange={changeLanguage} defaultValue={locale}>
+        <option value="en">EN</option>
+        <option value="ua">UA</option>
+      </select> */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image src={Logo} alt="/" width="125" height="50" />
@@ -34,23 +51,32 @@ const NavBar = () => {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">Home</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.home} */}
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">About</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.about} */}
+                About
+              </li>
             </Link>
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.skills} */}
                 Skills
               </li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.projects} */}
                 Projects
               </li>
             </Link>
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:text-[#757373] cursor-pointer">
+                {/* {t.contact} */}
                 Contact
               </li>
             </Link>
@@ -80,7 +106,10 @@ const NavBar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">Lets build something legendary together</p>
+              <p className="w-[85%] md:w-[90%] py-4">
+                {/* {t.letsBuild} */}
+                LETS BUILD SOMETHING TOGETHER
+              </p>
             </div>
           </div>
           <div className="py-4 flex flex-col">
@@ -91,6 +120,7 @@ const NavBar = () => {
                     setNav(false);
                   }}
                   className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
+                  {/* {t.home} */}
                   Home
                 </li>
               </Link>
@@ -100,6 +130,7 @@ const NavBar = () => {
                     setNav(false);
                   }}
                   className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
+                  {/* {t.about} */}
                   About
                 </li>
               </Link>
@@ -109,6 +140,7 @@ const NavBar = () => {
                     setNav(false);
                   }}
                   className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
+                  {/* {t.skills} */}
                   Skills
                 </li>
               </Link>
@@ -118,7 +150,8 @@ const NavBar = () => {
                     setNav(false);
                   }}
                   className="py-4 text-sm cursor-pointer hover:scale-105 ease-in duration-300">
-                  Projects
+                  {/* {t.projects} */}
+                  Project
                 </li>
               </Link>
               <Link href="/#contact">
@@ -127,12 +160,16 @@ const NavBar = () => {
                     setNav(false);
                   }}
                   className="py-4 text-sm cursor-pointer  hover:scale-105 ease-in duration-300">
+                  {/* {t.contact} */}
                   Contact
                 </li>
               </Link>
             </ul>
             <div className="pt-4">
-              <p className="uppercase tracking-widest text-[#5651e5]">Lets connect</p>
+              <p className="uppercase tracking-widest text-[#5651e5]">
+                {/* {t.letsConnect} */}
+                Lets Connect
+              </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
                   href="https://www.linkedin.com/in/yevhenii-peredrii-a069a7223/"

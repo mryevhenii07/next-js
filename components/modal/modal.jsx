@@ -13,8 +13,3 @@ const Modal = ({ isOpen, onClose, children }) => {
 };
 
 export default Modal;
-
-{
-  /* <div className="modal-overlay" onClick={onClose}></div>
-      <div className="modal-content">{children}</div> */
-}

@@ -1,12 +1,24 @@
 import React from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
+import { withStyles } from '@material-ui/core/styles';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaTelegram } from 'react-icons/fa';
 
 import Modal from './modal/modal';
 
+const TextOnlyTooltip = withStyles({
+  tooltip: {
+    color: 'white',
+    backgroundColor: 'blank',
+    height: '40px',
+    fontSize: '20px',
+    display: 'flex',
+    alignItems: 'center',
+  },
+})(Tooltip);
+
 const Main = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(false);
   const onClose = () => setOpen(true);
 
@@ -34,24 +46,24 @@ const Main = () => {
                 target="_blank"
                 rel="noreferrer">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedinIn size={22} />
+                  <FaLinkedinIn size={24} />
                 </div>
               </a>
               <a href="https://github.com/mryevhenii07" target="_blank" rel="noreferrer">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub size={22} />
+                  <FaGithub size={24} />
                 </div>
               </a>
-              <Tooltip title="mrit.works07@gmail.com" arrow>
+              <TextOnlyTooltip title="mrit.works07@gmail.com" arrow>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail size={22} />
+                  <AiOutlineMail size={24} />
                 </div>
-              </Tooltip>
+              </TextOnlyTooltip>
 
               <div
                 onClick={handleOpen}
                 className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaTelegram size={26} />
+                <FaTelegram size={28} />
               </div>
             </div>
           </div>

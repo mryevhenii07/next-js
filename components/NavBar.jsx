@@ -1,28 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-// import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import en from '../locales/en';
-// import ua from '../locales/ua';
 
-import Logo from '../public/assets/navLogo.png';
+import Logo from '../public/assets/logo.png';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
-  // const router = useRouter();
-  // const { locale } = router;
-  // const t = locale === 'en' ? en : ua;
-
-  // const changeLanguage = (e) => {
-  //   const locale = e.target.value;
-  //   console.log(locale);
-  //   router.push('/', '/', { locale: locale });
-  // };
   const handleNav = () => {
     setNav(!nav);
   };
@@ -40,13 +28,9 @@ const NavBar = () => {
 
   return (
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
-      {/* <select onChange={changeLanguage} defaultValue={locale}>
-        <option value="en">EN</option>
-        <option value="ua">UA</option>
-      </select> */}
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image src={Logo} alt="/" width="125" height="50" />
+          <Image src={Logo} alt="/" width="60" height="60" />
         </Link>
         <div>
           <ul className="hidden md:flex">

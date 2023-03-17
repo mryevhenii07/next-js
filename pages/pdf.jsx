@@ -9,9 +9,7 @@ import {
   StyleSheet,
   Font,
 } from '@react-pdf/renderer';
-
 import IAm from '../public/assets/iam.jpg';
-
 const PDF = () => {
   return (
     <Document style={styles.body}>

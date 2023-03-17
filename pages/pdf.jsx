@@ -57,11 +57,6 @@ const styles = StyleSheet.create({
     paddingTop: '80px',
   },
   page: {
-    // display: 'flex',
-    // alignContent: 'center',
-    // justifyContent: 'center',
-    // flexDirection: 'column',
-    // backgroundColor: 'indigo',
     padding: '10px',
   },
   title: {

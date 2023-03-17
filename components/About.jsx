@@ -2,7 +2,6 @@ import React from 'react';
 import Images from 'next/image';
 import Link from 'next/link';
 
-import { Document } from 'react-pdf';
 import AboutImg from '../public/assets/iam.jpg';
 // import resume from '../public/assets/pdf/sv.pdf';
 

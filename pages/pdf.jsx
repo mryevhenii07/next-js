@@ -33,7 +33,6 @@ const PDF = () => {
     </Document>
   );
 };
-// export default Pdf;
 const PDFView = () => {
   const [client, setClient] = useState(false);
   useEffect(() => {

@@ -1,19 +1,11 @@
 import Head from 'next/head';
-// import Image from 'next/image';
+
 import NavBar from '../components/NavBar';
 import Main from '../components/Main';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-
-// export function getStaticProps({ locale }) {
-//   return {
-//     props: {
-//       locale,
-//     },
-//   };
-// }
 
 export default function Home(props) {
   return (
@@ -24,7 +16,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      {/* <h2 style={{ color: 'red' }}>{props.locale}</h2> */}
+
       <Main />
       <About />
       <Skills />

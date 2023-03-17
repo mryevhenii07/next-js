@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 import PropertyImg from '../public/assets/project/walletbg.png';
@@ -17,7 +16,6 @@ const wallet = () => {
           <h3>Team Project</h3>
         </div>
       </div>
-
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
           <p>Project</p>

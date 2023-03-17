@@ -2,9 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
-
 import PropertyImg from '../public/assets/project/cryptobg.png';
-
 const crypto = () => {
   return (
     <div className="w-full ">

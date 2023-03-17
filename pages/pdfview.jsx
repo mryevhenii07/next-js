@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
+// import { useState, useEffect } from 'react';
+// import dynamic from 'next/dynamic';
 
-const InvoicePDF = dynamic(() => import('./pdf'), {
-  ssr: false,
-});
+// const InvoicePDF = dynamic(() => import('./pdf'), {
+//   ssr: false,
+// });
 
-const View = () => {
-  const [client, setClient] = useState(false);
+// const View = () => {
+//   const [client, setClient] = useState(false);
 
-  useEffect(() => {
-    setClient(true);
-  }, []);
-  return <InvoicePDF />;
-};
+//   useEffect(() => {
+//     setClient(true);
+//   }, []);
+//   return <InvoicePDF />;
+// };
 
-export default View;
+// export default View;

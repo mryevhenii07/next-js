@@ -7,14 +7,6 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
-// export function getStaticProps({ locale }) {
-//   return {
-//     props: {
-//       locale,
-//     },
-//   };
-// }
-
 export default function Home(props) {
   return (
     <div>
@@ -24,7 +16,6 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      {/* <h2 style={{ color: 'red' }}>{props.locale}</h2> */}
       <Main />
       <About />
       <Skills />
